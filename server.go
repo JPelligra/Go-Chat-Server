@@ -50,7 +50,7 @@ func (s *server) newClient(conn net.Conn) {
 
 func (s *server) nick(c *client, nick string) {
 	c.nick = nick
-	c.msg(fmt.Sprintf("all right, I will call you %s", nick))
+	c.msg(fmt.Sprintf("Your username is: %s", nick))
 }
 
 func (s *server) join(c *client, roomName string) {
