@@ -2,13 +2,13 @@ package main
 
 type commandID int
 
-const {
+const (
 	CMD_NICK commandID = iota
 	CMD_JOIN
 	CMD_ROOMS
 	CMD_MSG
 	CMD_QUIT
-}
+)
 
 type command struct {
 	id     commandID
